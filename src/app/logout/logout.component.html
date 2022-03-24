@@ -1,0 +1,18 @@
+<p>Welcome to Logout!</p>
+
+<button mat-button (click)="auth.logout({ returnTo: 'http://localhost:4200/login' })">
+    <span>Logout</span>
+</button>
+
+<!--
+<ng-container *ngIf="auth.isAuthenticated$ | async; else loggedOut">
+    <button mat-button (click)="auth.logout({ returnTo: 'http://localhost:4200/login' })">
+        <span>Logout</span>
+    </button>
+</ng-container>
+<ng-template #loggedOut>
+    <button mat-button routerLink="/login">
+        <span>Back to login</span>
+    </button>
+</ng-template>
+-->

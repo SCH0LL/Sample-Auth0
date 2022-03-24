@@ -1,0 +1,9 @@
+<p>Welcome to Login!</p>
+<button mat-button (click)="auth.loginWithRedirect()">
+    <span>Login</span>
+</button>
+
+<ul *ngIf="auth.user$ | async as user">
+    <li>{{ user.name }}</li>
+    <li>{{ user.email }}</li>
+</ul>
